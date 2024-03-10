@@ -1,10 +1,4 @@
-# EcommerceWeb_JSProject
-
-Sure, here's a sample README file description for your JavaScript e-commerce shoe website project:
-
----
-
-# E-Commerce Shoe Website
+# E-Commerce Shoe Website JavaScript Project
 
 Welcome to our mobile-friendly e-commerce shoe website project! This project is designed to provide users with a seamless shopping experience for purchasing shoes online. Developed using JavaScript, HTML, and CSS, our website offers a wide range of features to enhance usability and functionality.
 
