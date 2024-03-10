@@ -29,3 +29,4 @@ I welcome contributions from the community to enhance and improve our e-commerce
 
 This project was developed by Muhammad Taha Talib. I would like to thank the following resources for their inspiration and assistance:
 - [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
