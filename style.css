@@ -1,0 +1,741 @@
+:root{
+    --contrast-color:#FF9E21;
+
+    --contrast-color:#DCDBC7;
+
+    --main-color:#145C2F;
+
+    --main-color: #c91217;
+
+
+    --txt-color:#252842;
+    --txt2-color:#FFFFFF;
+
+    --shade-color:#D4D4D4;
+
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+
+body{
+    background-color: #FFFFFF;
+}
+
+*{
+    font-family: Poppins;
+}
+
+
+/************************Header Section**************************************/
+
+
+.header{
+    display: flex;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.header .logo-img{
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    width: 10%;
+}
+
+.header .navbar{
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+.header .navbar a{
+    color: var(--txt-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.header .navbar #nav-search option{
+    border: none;
+    outline: 0px;
+}
+
+/************************Background Section**************************************/
+
+
+.main .bg{
+    margin-top: -8px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.main .bg .bg-img{
+    width: 100%;
+    background-color: #FF9E21;
+    margin-left: 0px;
+    z-index: -1;
+    
+}
+
+
+.main .heading-txt{
+    width: 50%;
+    margin-top: -500px;
+    margin-left: 20px;
+
+}
+
+.main .heading-txt h1{
+    font-size: 38px;
+    color: var(--txt2-color);
+
+}
+
+.main .heading-txt .h2{
+    font-size: 38px;
+    color: var(--txt2-color);
+    margin-top: -40px;
+}
+
+
+.main .heading-txt span{
+    font-size: 38px;
+    color: #c91217;
+
+}
+
+
+.main .heading-txt p{
+    margin-top: -18px;
+    font-size: 15px;
+    color: var(--contrast-color);
+
+}
+
+.main .heading-txt .explore-shoes{
+    margin-top: 30px;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    background-color: var(--main-color);
+    color: var(--txt2-color);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .heading-txt .explore-shoes i{
+    margin-left: 5px;
+
+}
+
+.main .video{
+    margin-top: 0px;
+    width: 100%;
+    display: none;
+}
+
+/************************Trending Now Section**************************************/
+
+
+.main .shoe-cards-section{
+    margin-top: 320px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.main .shoe-cards-section .shoe-card-heading{
+    font-size: 30px;
+    width: 100%;
+
+}
+
+.main .shoe-cards-section .shoe-card{
+    border-radius: 12px;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 25px;
+    position: relative;
+    box-shadow:var(--txt-color) 0px 3px 6px,var(--txt-color) 0px 3px 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+
+.main .shoe-cards-section .shoe-card .addtocart,
+.main .shoe-cards-section .shoe-card .wishlist{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--txt-color);
+    position: absolute;
+    left: 82%;
+    top: 10px;
+    background-color: var(--main-color);
+    color: var(--txt2-color);
+    font-size: 20px;
+}
+
+.main .shoe-cards-section .shoe-card .wishlist{
+left: 67%;
+}
+
+
+.main .shoe-cards-section .shoe-card:hover  .wishlist{
+    border: 2px solid var(--txt2-color);
+}
+
+.main .shoe-cards-section .shoe-card:hover  .addtocart{
+    border: 2px solid var(--txt2-color);
+}
+
+
+.main .shoe-cards-section .shoe-card:hover{
+    transition: 0.5s;
+    background-color: var(--txt-color);
+}
+
+.main .shoe-cards-section .shoe-card:hover .product-tittle{
+    color: var(--txt2-color);
+}
+
+.main .shoe-cards-section .shoe-card:hover .product-price{
+        color: var(--shade-color);
+}
+
+.main .shoe-cards-section .shoe-card:hover .variable-products .product-variants{
+    background-color: var(--shade-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--txt2-color);
+
+}
+
+
+.main .shoe-cards-section .shoe-card .product-tittle{
+    font-size: 18px;
+    width: 100%;
+    color: var(--txt-color);
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.main .shoe-cards-section .shoe-card .product-price{
+    font-size: 15px;
+    width: 100%;
+    color: #5A5A5A;
+    margin-top: -20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.main .shoe-cards-section .shoe-card .product-img{
+    width: 90%;
+    margin-top: -10px;
+    padding-bottom: 70px;
+    
+}
+
+.main .shoe-cards-section .shoe-card .variable-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 25%;
+    top: 76%;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.main .shoe-cards-section .shoe-card .variable-products .product-variants{
+    border-radius: 5px;
+    width: 28%;
+    height: 50%;
+    border:2px solid var(--txt-color);
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.main .shoe-cards-section .shoe-card .variable-products .product-variants .product-variants-img{
+    width: 100%;
+    margin-top: 6px;
+    
+}
+
+
+/************************Shoe Details**************************************/
+
+.main .shoe-details{
+    width: 95%;
+    height: 545px;
+    position: absolute;
+    background-color: var(--txt2-color);
+    z-index: 1;
+    left: 2.5%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: var(--main-color) 0px 50px 100px -20px,var(--main-color) 0px 30px 100px -30px, var(--main-color) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    display: none;
+}
+.main .shoe-details .cross{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 95%;
+    background-color: var(--main-color);
+    color: var(--txt2-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main .shoe-details .img-div{
+    width: 38%;
+    height: 45vh;
+    top: 10%;
+    left: 3%;
+    z-index: -1;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.main .shoe-details .product-img{
+    width: 100%;
+    margin-top: 120px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.main .shoe-details .details{
+   
+    width: 50%;
+}
+
+
+.main .shoe-details .details h1{
+    font-size: 38px;
+    font-size: 2em;
+    margin-top: 60px;
+    margin-left: 20%;
+}
+
+.main .shoe-details .details h2{
+    font-size: 25px;
+    font-size: 1.5em;
+    margin-top: -40px;
+    margin-left: 20%;
+}
+
+.main .shoe-details .details p{
+    font-size: 2.4vh;
+    margin-top: -10px;
+    margin-left: 20%;
+}
+
+
+
+.main .shoe-details .details .add-to-cart,
+.main .shoe-details .details .add-to-wishlist{
+    background-color: var(--main-color);
+    color: var(--txt2-color);
+    width: 170px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: -25px;
+}
+
+
+.main .shoe-details .details .add-to-cart:hover,
+.main .shoe-details .details .add-to-wishlist:hover{
+    background-color: var(--txt-color);
+}
+
+.main .shoe-details .details .add-to-cart{
+    margin-left: 0%;
+
+}
+
+.main .shoe-details .details .add-to-wishlist{
+    margin-left: 20%;
+
+}
+
+
+
+.main .shoe-details .variable-products-details{
+    width: 100%;
+    margin-top: -50px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main .shoe-details .variable-products-details .product-variants-details{
+    width: 20% ;
+    height: 70%;
+    background-color: var(--txt-color);
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.main .shoe-details .variable-products-details .product-variants-details:active,
+.main .shoe-details .variable-products-details .product-variants-details:focus{
+    background-color: var(--main-color);
+    
+}
+
+
+.main .shoe-details .variable-products-details .product-variants-details img{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+
+
+.main .shoe-details .variable-products-details .size{
+width: 30%;
+height: 20px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-left: 10px;
+margin-top: 15px;
+}
+
+.main .shoe-details .variable-products-details .size-btn{
+    color: var(--txt-color);
+    border: 2px solid var(--txt-color);
+    font-size: 15px;
+    border-radius: 8px;
+    width: 45%;
+    height: 200%;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+.main .shoe-details .variable-products-details .size-btn:hover{
+    background-color: var(--txt-color);
+    color: var(--txt2-color);
+}
+
+
+
+.main .shoe-details .variable-products-details .size-btn:active,
+.main .shoe-details .variable-products-details .size-btn:focus {
+    background-color: var(--txt-color);
+    color: var(--txt2-color);
+
+}
+
+.main .shoe-details .buy-now{
+    width: 20%;
+    background-color: var(--main-color);
+    color: var(--txt2-color);
+    border-radius: 10px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+
+
+/*Footer*/
+
+.footer{
+    background-color: var(--main-color);
+    text-align: center;
+
+}
+
+.footer span{
+
+    color: var(--txt2-color);
+    
+}
+
+@media(max-width:800px){
+
+    .main .shoe-details .cross{
+        margin-left: 93%;
+    }
+
+    
+.main .shoe-details .variable-products-details .product-variants-details img{
+    margin-top: 30%;
+}
+
+
+.main .shoe-details .variable-products-details .size{
+    margin-top: 5%;
+    }
+
+.main .shoe-details .variable-products-details .size-btn{
+    width: 30%;
+    height: 200%;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+    
+.main .shoe-details .details .add-to-cart,
+.main .shoe-details .details .add-to-wishlist{
+    top: 59%;
+    position: absolute;
+    
+}
+.main .shoe-details .details .add-to-wishlist{
+    left: 50%;
+
+}
+
+.main .shoe-details .details .add-to-cart{
+    left: 44%;
+}
+
+}
+
+@media(max-width: 720px){
+
+    
+.main .shoe-details{
+    width: 95%;
+    height: 500px;
+    position: absolute;
+    background-color: var(--txt2-color);
+    z-index: 1;
+    left: 2.5%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: var(--main-color) 0px 50px 100px -20px,var(--main-color) 0px 30px 100px -30px, var(--main-color) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    display: none;
+}
+
+    
+.main .shoe-details .details h1{
+    margin-top: 30px;
+}
+
+    
+    .main .shoe-details .details .add-to-wishlist{
+        top: 55%;
+        left: -12%;
+    
+    }
+    
+    .main .shoe-details .details .add-to-cart{
+        top: 65%;
+        left: 8%;
+    }   
+}
+
+
+@media(max-width:565px){
+
+    .main .shoe-details .cross{
+        margin-left: 93%;
+    }
+
+    
+.main .shoe-details .variable-products-details .size{
+    margin-top: 5%;
+    }
+
+.main .shoe-details .variable-products-details .size-btn{
+    width: 40%;
+    height: 140%;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+.main .shoe-details .details p{
+    font-size: 2.3vh;
+}
+
+.main .shoe-details .details .add-to-wishlist{
+    top: 55%;
+}
+
+.main .shoe-details .details .add-to-cart{
+    top: 65%;
+}   
+
+
+
+}
+
+
+@media(max-width:520px){
+
+    .main .shoe-details{
+        width: 95%;
+        height: 545px;
+        position: absolute;
+        background-color: var(--txt2-color);
+        z-index: 1;
+        left: 2.5%;
+        top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: var(--main-color) 0px 50px 100px -20px,var(--main-color) 0px 30px 100px -30px, var(--main-color) 0px -2px 6px 0px inset;
+        border-radius: 10px;
+        display: none;
+    }
+    .main .shoe-details .cross{
+        margin-top: 8px;
+       margin-left: 91%;
+    }
+    
+    
+    
+    .main .shoe-details .img-div{
+        width: 38%;
+        height: 45vh;
+        top: 10%;
+        left: 3%;
+        z-index: -1;
+        border-radius: 15px;
+        cursor: pointer;
+    
+    }
+    
+    .main .shoe-details .product-img{
+        width: 100%;
+        margin-top: 120px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    
+    .main .shoe-details .details{
+       
+        width: 100%;
+    }
+    
+    
+    .main .shoe-details .details h1{
+        font-size: 1.8em;
+        margin-top: -320px;
+        margin-left: 10%;
+    }
+    
+    .main .shoe-details .details h2{
+        font-size: 1.2em;
+        margin-top: -30px;
+        margin-left: 10%;
+    }
+    
+    .main .shoe-details .details p{
+        font-size: 2vh;
+        margin-top: 26%;
+        margin-left: 10%;
+        width: 85%;
+    }
+
+    
+    .main .shoe-details .details .add-to-cart,
+    .main .shoe-details .details .add-to-wishlist{
+        position: absolute;
+    }
+    
+    
+    .main .shoe-details .details .add-to-cart{
+        margin-top: -40px;
+        margin-left: 0%;
+    
+    }
+    
+    .main .shoe-details .details .add-to-wishlist{
+        margin-left: 65%;
+        margin-top: 12px;
+
+
+    
+    }
+    
+    
+    
+    .main .shoe-details .variable-products-details{
+        margin-left: 0px;
+    
+    }
+    
+    .main .shoe-details .variable-products-details .product-variants-details{
+        width: 30% ;
+        height: 70%;
+        border-radius: 8px;
+        margin-left: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+    
+    }
+ 
+    
+    .main .shoe-details .variable-products-details .product-variants-details img{
+        margin-top: 20%;
+        margin-left: 2%;
+        width: 98%;
+    }
+    
+    
+    
+    .main .shoe-details .variable-products-details .size{
+    position: absolute;
+    top: 6%;
+    left: 60%;
+    }
+    
+    .main .shoe-details .variable-products-details .size-btn{
+        color: var(--txt-color);
+        border: 2px solid var(--txt-color);
+        font-size: 15px;
+        border-radius: 8px;
+        width: 45%;
+        height: 200%;
+        margin-top: 4px;
+        margin-left: 5px;
+        transition: 0.5s;
+    }
+    
+
+}

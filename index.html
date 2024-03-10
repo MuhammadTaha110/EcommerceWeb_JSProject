@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!--Header-->
+
+  <header class="header">
+    <img class="logo-img" src="imgs/bazaarlogo2.png" alt="Logo">
+    <nav class="navbar">
+        
+            <form id="nav-search" action="/action_page.php">
+                <select id="cars" name="cars">
+                  <option value="volvo">Men</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+
+                <select id="cars" name="cars">
+                    <option value="volvo">Women</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </select>
+
+
+                  <select id="cars" name="cars">
+                    <option value="volvo">Kids</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                <input type="submit">
+            </form>
+      
+        
+
+    </nav>
+  </header>
+   
+
+  <!--Main Section-->
+
+    <main class="main">
+
+      <!--Background Section-->
+
+      <!--
+
+        <video class="video" autoplay loop muted>
+         <source src="imgs/bg-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="bg">
+            <img class="bg-img" src="imgs/bg.png" alt="">
+        </div>
+
+        <div class="heading-txt">
+            <h1>Every Step</h1>
+            <h1 class="h2">Tells a Story!</h1>
+            <p>Elevate every stride with Bazaar
+            </p>
+
+            <p> by Muhammad Taha Talib.</p>
+            
+            <button class="explore-shoes">
+                Explore Shoes <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+
+        -->
+
+        <sectiON class="background"></sectiON>
+
+        <!--Trending Now Section-->
+        
+        <section class="shoe-cards-section">
+          
+          <h3 class="shoe-card-heading">
+            Trending Now
+          </h3>
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike AirMax
+            </h3>
+
+            <h3 class="product-price">
+              RS: 5000
+            </h3>
+            <img id="product-1-img"  class="product-img" src="imgs/sh (1) c.png" alt="shoes" onclick="allShowDetails('product-1-img',0,'imgs/sh (1) c.png','imgs/sh (2).png','imgs/sh (3).png')">
+
+           <div class="variable-products" >
+            <div  class="product-variants" onclick="newProduct( 'product-1-img' , 'imgs/sh (1).png')">
+              <img  class="product-variants-img" src="imgs/sh (1) c.png" alt="">
+            </div>
+
+            <div onclick="newProduct( 'product-1-img' , 'imgs/sh (2).png')" class="product-variants" >
+              <img class="product-variants-img" src="imgs/sh (2).png" alt="">
+            </div>
+
+            <div onclick="newProduct( 'product-1-img' , 'imgs/sh (3).png')" class="product-variants">
+              <img class="product-variants-img" src="imgs/sh (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+          <!--Shoe Card End-->
+
+
+          
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Striped
+            </h3>
+
+            <h3 class="product-price">
+              RS: 7250
+            </h3>
+            <img id="product-2-img" class="product-img" src="imgs/am-1 (1).png" alt="shoes" onclick="allShowDetails('product-2-img',1,'imgs/am-1 (1).png','imgs/am-1 (2).png','imgs/am-1 (3).png')">
+
+           <div class="variable-products">
+            <div class="product-variants" onclick="newProduct( 'product-2-img' , 'imgs/am-1 (1).png')">
+              <img class="product-variants-img" src="imgs/am-1 (1).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-2-img' , 'imgs/am-1 (2).png')">
+              <img class="product-variants-img" src="imgs/am-1 (2).png" alt="">
+            </div>
+
+            <div class="product-variants" onclick="newProduct( 'product-2-img' , 'imgs/am-1 (3).png')">
+              <img class="product-variants-img" src="imgs/am-1 (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike AirMax Plus
+            </h3>
+
+            <h3 class="product-price">
+              RS: 9000
+            </h3>
+            <img  id="product-3-img" class="product-img" src="imgs/AirMaxPlusDrift (1).png" alt="shoes" onclick="allShowDetails('product-3-img',2,'imgs/AirMaxPlusDrift (1).png','imgs/AirMaxPlusDrift (2).png','imgs/AirMaxPlusDrift (3).png')">
+
+           <div class="variable-products">
+            <div id="shoe1" class="product-variants" onclick="newProduct( 'product-3-img' , 'imgs/AirMaxPlusDrift (1).png')">
+              <img  class="product-variants-img" src="imgs/AirMaxPlusDrift (1).png" alt="">
+            </div>
+
+            <div id="shoe2" class="product-variants" onclick="newProduct( 'product-3-img' , 'imgs/AirMaxPlusDrift (2).png')">
+              <img  class="product-variants-img" src="imgs/AirMaxPlusDrift (2).png" alt="">
+            </div>
+
+            <div id="shoe3" class="product-variants" onclick="newProduct( 'product-3-img' , 'imgs/AirMaxPlusDrift (3).png')">
+              <img class="product-variants-img" src="imgs/AirMaxPlusDrift (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Giannis
+            </h3>
+
+            <h3 class="product-price">
+              RS: 22000
+            </h3>
+            <img id="product-4-img" class="product-img" src="imgs/Nike Giannis (3).png" alt="shoes" onclick="allShowDetails('product-4-img',3,'imgs/Nike Giannis (3).png','imgs/Nike Giannis (2).png','imgs/Nike Giannis (1).png')">
+
+           <div class="variable-products">
+            <div class="product-variants" onclick="newProduct( 'product-4-img' , 'imgs/Nike Giannis (3).png')">
+              <img class="product-variants-img" src="imgs/Nike Giannis (3).png" alt="">
+            </div>
+
+            <div class="product-variants" onclick="newProduct( 'product-4-img' , 'imgs/Nike Giannis (2).png')">
+              <img class="product-variants-img" src="imgs/Nike Giannis (2).png" alt="">
+            </div>
+
+            <div class="product-variants" onclick="newProduct( 'product-4-img' , 'imgs/Nike Giannis (1).png')">
+              <img class="product-variants-img" src="imgs/Nike Giannis (1).png" alt="">
+            </div>
+
+            
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike AirMax 90
+            </h3>
+
+            <h3 class="product-price">
+              RS: 17500
+            </h3>
+            <img id="product-5-img" class="product-img" src="imgs/airmax90 (1).png" alt="shoes" onclick="allShowDetails('product-5-img',4,'imgs/airmax90 (1).png','imgs/airmax90 (2).png','imgs/airmax90 (3).png')">
+
+           <div class="variable-products">
+            <div class="product-variants" onclick="newProduct( 'product-5-img' , 'imgs/airmax90 (1).png')">
+              <img class="product-variants-img" src="imgs/airmax90 (1).png" alt="">
+            </div>
+
+            <div class="product-variants" onclick="newProduct( 'product-5-img' , 'imgs/airmax90 (2).png')">
+              <img class="product-variants-img" src="imgs/airmax90 (2).png" alt="">
+            </div>
+
+            <div class="product-variants" onclick="newProduct( 'product-5-img' , 'imgs/airmax90 (3).png')">
+              <img class="product-variants-img" src="imgs/airmax90 (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike AirForce
+            </h3>
+
+            <h3 class="product-price">
+              RS: 15000
+            </h3>
+            <img id="product-6-img" class="product-img" src="imgs/airforce (3).png" alt="shoes" onclick="allShowDetails('product-6-img',5,'imgs/airforce (3).png','imgs/airforce (2).png','imgs/airforce (1).png')">
+
+           <div class="variable-products">
+            <div class="product-variants"  onclick="newProduct( 'product-6-img' , 'imgs/airforce (3).png')">
+              <img class="product-variants-img" src="imgs/airforce (3).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-6-img' , 'imgs/airforce (2).png')">
+              <img class="product-variants-img" src="imgs/airforce (2).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-6-img' , 'imgs/airforce (1).png')">
+              <img class="product-variants-img" src="imgs/airforce (1).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+
+          
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike AirMax 97
+            </h3>
+
+            <h3 class="product-price">
+              RS: 28000
+            </h3>
+            <img id="product-7-img" class="product-img" src="imgs/chicago (3).png" alt="shoes" onclick="allShowDetails('product-7-img',6,'imgs/chicago (3).png','imgs/chicago (2).png','imgs/chicago (1).png')">
+
+           <div class="variable-products">
+            <div class="product-variants"  onclick="newProduct( 'product-7-img' , 'imgs/chicago (3).png')">
+              <img class="product-variants-img" src="imgs/chicago (3).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-7-img' , 'imgs/chicago (2).png')">
+              <img class="product-variants-img" src="imgs/chicago (2).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-7-img' , 'imgs/chicago (1).png')">
+              <img class="product-variants-img" src="imgs/chicago (1).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Shadow
+            </h3>
+
+            <h3 class="product-price">
+              RS: 15000
+            </h3>
+            <img id="product-8-img" class="product-img" src="imgs/shadow (1).png" alt="shoes" onclick="allShowDetails('product-8-img',7,'imgs/shadow (1).png','imgs/shadow (2).png','imgs/shadow (3).png')">
+
+           <div class="variable-products">
+            <div class="product-variants"  onclick="newProduct( 'product-8-img' , 'imgs/shadow (1).png')">
+              <img class="product-variants-img" src="imgs/shadow (1).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-8-img' , 'imgs/shadow (2).png')">
+              <img class="product-variants-img" src="imgs/shadow (2).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-8-img' , 'imgs/shadow (3).png')">
+              <img class="product-variants-img" src="imgs/shadow (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike AirMax 270
+            </h3>
+
+            <h3 class="product-price">
+              RS: 22000
+            </h3>
+            <img id="product-9-img" class="product-img" src="imgs/airmax270 (3).png" alt="shoes" onclick="allShowDetails('product-9-img',8,'imgs/airmax270 (3).png','imgs/airmax270 (2).png','imgs/airmax270 (1).png')">
+
+           <div class="variable-products">
+            <div class="product-variants"  onclick="newProduct( 'product-9-img' , 'imgs/airmax270 (3).png')">
+              <img class="product-variants-img" src="imgs/airmax270 (3).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-9-img' , 'imgs/airmax270 (2).png')">
+              <img class="product-variants-img" src="imgs/airmax270 (2).png" alt="">
+            </div>
+
+            <div class="product-variants"  onclick="newProduct( 'product-9-img' , 'imgs/airmax270 (1).png')">
+              <img class="product-variants-img" src="imgs/airmax270 (1).png " alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card" >
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Free Run
+            </h3>
+
+            <h3 class="product-price">
+              RS: 22000
+            </h3>
+            <img class="product-img" src="imgs/freerun (1).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/freerun (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/freerun (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/freerun (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike LeBron
+            </h3>
+
+            <h3 class="product-price">
+              RS: 26500
+            </h3>
+            <img class="product-img" src="imgs/lebron (1).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/lebron (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/lebron (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/lebron (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Witness
+            </h3>
+
+            <h3 class="product-price">
+              RS: 19800
+            </h3>
+            <img class="product-img" src="imgs/witness (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+           <!--Shoe Card Start-->
+           <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Kids
+            </h3>
+
+            <h3 class="product-price">
+              RS: 17500
+            </h3>
+            <img class="product-img" src="imgs/kids (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/kids (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/kids (3).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/kids (1).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+           <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Witness
+            </h3>
+
+            <h3 class="product-price">
+              RS: 19800
+            </h3>
+            <img class="product-img" src="imgs/witness (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+           <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Witness
+            </h3>
+
+            <h3 class="product-price">
+              RS: 19800
+            </h3>
+            <img class="product-img" src="imgs/witness (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Witness
+            </h3>
+
+            <h3 class="product-price">
+              RS: 19800
+            </h3>
+            <img class="product-img" src="imgs/witness (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Witness
+            </h3>
+
+            <h3 class="product-price">
+              RS: 19800
+            </h3>
+            <img class="product-img" src="imgs/witness (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+
+
+          <!--Shoe Card Start-->
+          <div class="shoe-card">
+
+            <div class="wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="addtocart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <h3 class="product-tittle">
+              Nike Witness
+            </h3>
+
+            <h3 class="product-price">
+              RS: 19800
+            </h3>
+            <img class="product-img" src="imgs/witness (2).png" alt="shoes">
+
+           <div class="variable-products">
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (2).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (1).png" alt="">
+            </div>
+
+            <div class="product-variants">
+              <img class="product-variants-img" src="imgs/witness (3).png" alt="">
+            </div>
+
+           </div>
+          </div>
+
+          <!--Shoe Card End-->
+        </section>
+
+        <!--Shoe-Details Section-->
+        <section class="shoe-details">
+
+          <i onclick="hideDetails()" class="cross fa-solid fa-x"></i>
+          
+          <div class="img-div">
+          <img id="product-1-img-details"  class="product-img" src="" alt="shoes" onclick="displayDetails()">
+          </div>
+
+          <div class="details">
+            <h1 class="shoe-model"></h1>
+            <h2 class="shoe-price"></h2>
+            <p class="short-description"></p>
+  
+            <button class="add-to-wishlist"> Checkout &nbsp;
+              <i class="fa-solid fa-receipt"></i>
+            </button>
+  
+            <button class="add-to-cart">  Add to Cart &nbsp;
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            </button>
+
+
+            
+          </div>
+
+          <div class="variable-products-details">
+            <div  tabindex="0" class="product-variants-details" onclick="newProduct2('img-1')">
+              <img id="img-1" class="product-variants-img" src="" alt="">
+            </div>
+
+            <div  tabindex="0" class="product-variants-details" onclick="newProduct2('img-2')">
+              <img id="img-2" class="product-variants-img" src="" alt="">
+            </div>`
+
+            <div  tabindex="0" class="product-variants-details" onclick="newProduct2('img-3')">
+              <img id="img-3" class="product-variants-img" src="" alt="">
+            </div>
+
+            <div class="size">
+              <button class="size-btn">XS</button>
+              <button class="size-btn">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
+
+
+            </div>
+
+         
+
+          </div>
+
+          <button class="buy-now">
+            Buy Now
+          </button>
+         
+        </section>
+    
+    </main>
+
+
+    
+    <footer class="footer">
+      <span>Copyright  &copy; 2024 | All Rights Reserved | Muhammad Taha Talib</span>
+    </footer>
+   
+    
+    <script src="app.js"></script>
+</body>
+</html>
