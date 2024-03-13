@@ -371,7 +371,6 @@ left: 67%;
     border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.5s;
     margin-top: -25px;
 }
 
@@ -379,6 +378,8 @@ left: 67%;
 .main .shoe-details .details .add-to-cart:hover,
 .main .shoe-details .details .add-to-wishlist:hover{
     background-color: var(--txt-color);
+    transition: 0.5s;
+
 }
 
 .main .shoe-details .details .add-to-cart{
@@ -520,8 +521,8 @@ margin-top: 15px;
 .main .shoe-details .details .add-to-wishlist{
     top: 59%;
     position: absolute;
-    
 }
+
 .main .shoe-details .details .add-to-wishlist{
     left: 50%;
 
@@ -532,6 +533,37 @@ margin-top: 15px;
 }
 
 }
+
+
+@media(max-width:920px){
+    body{
+        background-color: #145C2F;
+    }
+
+    .main .shoe-details .details .add-to-wishlist{
+        top: 50%;
+        position: absolute;
+        top: 57%;
+        left: 45%;
+        margin-left: 10px;
+
+    }
+    
+    .main .shoe-details .details .add-to-cart{
+        position: absolute;
+        top: 57%;
+        margin-left: 10px;
+        left: 70%;
+    } 
+    
+    .main .shoe-details .details p{
+        font-size: 1.9vh;
+       
+    }
+
+    
+}
+
 
 @media(max-width: 720px){
 
@@ -558,13 +590,13 @@ margin-top: 15px;
 
     
     .main .shoe-details .details .add-to-wishlist{
-        top: 55%;
-        left: -12%;
+        top: 53%;
+        left: 8%;
     
     }
     
     .main .shoe-details .details .add-to-cart{
-        top: 65%;
+        top: 62%;
         left: 8%;
     }   
 }
@@ -686,7 +718,7 @@ margin-top: 15px;
     }
     
     .main .shoe-details .details .add-to-wishlist{
-        margin-left: 65%;
+        margin-left: 45%;
         margin-top: 12px;
 
 
