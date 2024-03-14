@@ -355,7 +355,7 @@ left: 67%;
 }
 
 .main .shoe-details .details p{
-    font-size: 2.4vh;
+    font-size: 1.4dvw;
     margin-top: -10px;
     margin-left: 20%;
 }
@@ -536,10 +536,7 @@ margin-top: 15px;
 
 
 @media(max-width:920px){
-    body{
-        background-color: #145C2F;
-    }
-
+  
     .main .shoe-details .details .add-to-wishlist{
         top: 50%;
         position: absolute;
@@ -557,7 +554,7 @@ margin-top: 15px;
     } 
     
     .main .shoe-details .details p{
-        font-size: 1.9vh;
+        font-size: 1.5vw;
        
     }
 
@@ -592,12 +589,20 @@ margin-top: 15px;
     .main .shoe-details .details .add-to-wishlist{
         top: 53%;
         left: 8%;
+
+        left: 70%;
+        top: 280px;
+        margin-left: -20px;
+
     
     }
     
     .main .shoe-details .details .add-to-cart{
         top: 62%;
         left: 8%;
+
+        left :38%;
+        top: 280px;
     }   
 }
 
@@ -622,18 +627,58 @@ margin-top: 15px;
 }
 
 .main .shoe-details .details p{
-    font-size: 2.3vh;
+    font-size: 2.3vw;
 }
 
 .main .shoe-details .details .add-to-wishlist{
     top: 55%;
+    top: 280px;
 }
 
 .main .shoe-details .details .add-to-cart{
     top: 65%;
+    top: 280px;
+    left: 20%;
+
 }   
 
 
+
+}
+
+@media(max-width:680px){
+
+    .main .shoe-details .details p{
+        font-size: 1.8vw;
+    }
+
+    
+    .main .shoe-details .details .add-to-cart{
+        left: 35%;
+    }
+    
+    .main .shoe-details .details .add-to-wishlist{
+        left: 70%;
+    }
+    
+
+}
+
+@media(max-width:620px){
+
+    .main .shoe-details .details p{
+        font-size: 1.8vw;
+    }
+
+    
+    .main .shoe-details .details .add-to-cart{
+        left: 5%;
+    }
+    
+    .main .shoe-details .details .add-to-wishlist{
+        left:60%;
+    }
+    
 
 }
 
@@ -698,8 +743,8 @@ margin-top: 15px;
     }
     
     .main .shoe-details .details p{
-        font-size: 2vh;
-        margin-top: 26%;
+        font-size: 2.5vw;
+        margin-top: 120px;
         margin-left: 10%;
         width: 85%;
     }
@@ -712,13 +757,13 @@ margin-top: 15px;
     
     
     .main .shoe-details .details .add-to-cart{
-        margin-top: -40px;
+        margin-top: 12px;
         margin-left: 0%;
     
     }
     
     .main .shoe-details .details .add-to-wishlist{
-        margin-left: 45%;
+        margin-left: -10%;
         margin-top: 12px;
 
 
@@ -771,3 +816,4 @@ margin-top: 15px;
     
 
 }
+
