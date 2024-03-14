@@ -397,10 +397,9 @@ left: 67%;
 .main .shoe-details .variable-products-details{
     width: 100%;
     margin-top: -50px;
-    margin-left: 20px;
+    margin-left: 0px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .main .shoe-details .variable-products-details .product-variants-details{
@@ -819,6 +818,11 @@ margin-top: 15px;
 
 @media(max-width:430px){
   
+    .main .shoe-details .cross{
+    margin-left: 88%;
+
+    }
+
     .main .shoe-details .details .add-to-wishlist{
         margin-left: -8%;
         width: 150px;
@@ -836,9 +840,16 @@ margin-top: 15px;
        
     }
 
-    .main .shoe-details .product-variants-details{
-    }
 
+    
+   .main .shoe-details #product-2{
+    margin-left: 5px;
+   }
+    
+
+  .main .shoe-details #product-3{
+    margin-left: 0px;
+   }
     
 }
 
