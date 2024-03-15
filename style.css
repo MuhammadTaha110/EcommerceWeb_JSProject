@@ -824,13 +824,19 @@ margin-top: 15px;
     }
 
     .main .shoe-details .details .add-to-wishlist{
-        margin-left: -8%;
+        margin-left: -15%;
         width: 150px;
+        width: 90%;
+        margin-top: 60px;
+        margin-left: -50px;
+        left: 20%;
 
     }
     
     .main .shoe-details .details .add-to-cart{
         width: 150px;
+        width: 90%;
+
 
     } 
     
@@ -857,7 +863,7 @@ margin-top: 15px;
 }
 
 .main .shoe-details .variable-products-details .size{
-    margin-top: 42px;
+    margin-top: 40px;
 }
     
 }
