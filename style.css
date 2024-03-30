@@ -105,6 +105,23 @@ body{
     */
 }
 
+.main .background .div-right{
+    width: 50%;
+}
+
+.main .background .div-right .main-heading{
+    margin-top: -500px;
+    margin-left: 20px;
+    color: var(--txt2-color);
+    font-size: 2rem;
+}
+
+.main .background .div-right .main-paragraph{
+    margin-top: 0px;
+    margin-left: 20px;
+    color: var(--txt2-color);
+    font-size: 1rem;
+}
 
 .main .background .bg-img-div{
     text-align: right;
