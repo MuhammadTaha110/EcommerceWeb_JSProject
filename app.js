@@ -32,6 +32,21 @@ function displayDetails(){
 
 }
 
+
+
+function showChange(){
+    //document.getElementById('background-img').src= 'imgs/airmax90 (2).png'
+
+    //let changer = shoes[1].images[0];
+
+    //console.warn(changer);
+    alert();
+
+   // document.getElementById('background-img').src= changer;
+}
+
+showChange();
+
 function hideDetails(){
 
     var section =document.querySelector('.shoe-details');
