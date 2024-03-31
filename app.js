@@ -34,19 +34,6 @@ function displayDetails(){
 
 
 
-function showChange(){
-    //document.getElementById('background-img').src= 'imgs/airmax90 (2).png'
-
-    //let changer = shoes[1].images[0];
-
-    //console.warn(changer);
-    alert();
-
-   // document.getElementById('background-img').src= changer;
-}
-
-showChange();
-
 function hideDetails(){
 
     var section =document.querySelector('.shoe-details');
@@ -123,9 +110,9 @@ const shoes = [
         name: " Nike Giannis",
         price: "PKR: 22000",
         images: [
-            "imgs/AirMaxPlusDrift (1).png",
-            "imgs/AirMaxPlusDrift (2).png",
-            "imgs/AirMaxPlusDrift (3).png"
+            "imgs/Nike Giannis (1).png",
+            "imgs/Nike Giannis (2).png",
+            "imgs/Nike Giannis (3).png"
         ],
         description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!'
     },
@@ -157,3 +144,51 @@ const shoes = [
     // Add more shoes as needed
 ];
 
+
+/*
+function showChange() {
+    //let showModel2 = shoes[1].images[1]; // Accessing the second shoe object's name
+    //console.warn(showModel2);
+
+    for(let count=0; count < shoes.length-1 ; count++){
+        for(let countImages = 0 ; countImages < shoes[count].images.length; countImages++){
+            //let showModel2 = shoes[count].images[countImages]; // Accessing the second shoe object's name
+            //console.warn(showModel2);
+            //document.querySelector('#background-img').src=showModel2;
+
+            setTimeout(() => {
+                let showModel2 = shoes[count].images[countImages];
+              // console.warn(showModel2);
+              document.querySelector('#background-img').src=showModel2;
+
+            }, countImages * 2000); // Multiply countImages by 5000 to increase delay for each image
+
+        }
+
+    }
+
+    //document.querySelector('#background-img').src=showModel2;
+}
+*/
+
+function showChange() {
+    for (let count = 0; count < shoes.length; count++) {
+        for (let countImages = 0; countImages < shoes[count].images.length; countImages++) {
+            // Calculate the delay based on both count and countImages
+            let delay = (count * shoes[count].images.length + countImages) * 1000;
+            
+            // Wrap the console.warn inside setTimeout to create a delay
+            setTimeout(() => {
+                let showModel2 = shoes[count].images[countImages];
+                document.querySelector('#background-img').src=showModel2;
+                //console.warn(showModel2);
+            }, delay);
+        }
+    }
+}
+
+// Call showChange function to initiate console.warn images one by one after a few seconds
+showChange();
+
+
+showChange();
