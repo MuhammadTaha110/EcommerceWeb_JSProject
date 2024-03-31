@@ -119,22 +119,42 @@ const shoes = [
     {
         name: " Nike AirMax 90",
         price: "PKR: 17500",
-        description: 'Get amazing comfort and style with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!'
+        description: 'Get amazing comfort and style with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!',
+        images: [
+            "imgs/airmax90 (1).png",
+            "imgs/airmax90 (2).png",
+            "imgs/airmax90 (3).png"
+        ],
     },
     {
         name: " Nike AirForce",
         price: "PKR: 15000",
-        description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!'
+        description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!',
+        images: [
+            "imgs/airforce (3).png",
+            "imgs/airforce (2).png",
+            "imgs/airforce (1).png"
+        ]
     },
     {
         name: " Nike AirMax 97",
         price: "PKR: 28000",
-        description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!'
+        description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!',
+        images: [
+            "imgs/chicago (1).png",
+            "imgs/chicago (2).png",
+            "imgs/chicago (3).png"
+        ]
     },
     {
         name: " Nike Shadow",
         price: "PKR: 15000",
-        description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!'
+        description: 'Step into style and comfort with our latest collection of shoes. Crafted with precision and passion, our shoes seamlessly blend fashion-forward design with unparalleled comfort. Shop now Hurry up!',
+        images: [
+            "imgs/shadow (1).png",
+            "imgs/shadow (2).png",
+            "imgs/shadow (3).png"
+        ]
     },
     {
         name: " Nike AirMax 270",
@@ -175,7 +195,7 @@ function showChange() {
     for (let count = 0; count < shoes.length; count++) {
         for (let countImages = 0; countImages < shoes[count].images.length; countImages++) {
             // Calculate the delay based on both count and countImages
-            let delay = (count * shoes[count].images.length + countImages) * 1000;
+            let delay = (count * shoes[count].images.length + countImages) * 2000;
             
             // Wrap the console.warn inside setTimeout to create a delay
             setTimeout(() => {
@@ -185,10 +205,11 @@ function showChange() {
             }, delay);
         }
     }
+    
 }
 
-// Call showChange function to initiate console.warn images one by one after a few seconds
-showChange();
-
-
-showChange();
+setInterval (() => {
+    showChange();
+},
+    5000
+)
